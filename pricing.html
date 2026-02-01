@@ -543,11 +543,9 @@
         }
         
         function selectPlan(plan) {
-            // For now, redirect to app download
             alert('Selected: ' + plan.toUpperCase() + ' plan (' + billingCycle + ')\n\nDownload the app to subscribe!');
             window.location.href = 'index.html#download';
             
-            // When Stripe is set up, use this instead:
             // const checkoutUrls = {
             //     starter: {
             //         monthly: 'https://buy.stripe.com/4gMdR8a8V5SneIHcZx9k400',
